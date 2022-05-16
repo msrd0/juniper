@@ -41,7 +41,7 @@ Check the LICENSE file for details.
 #![doc(html_root_url = "https://docs.rs/juniper_warp/0.2.0")]
 
 use anyhow::anyhow;
-use futures::{FutureExt as _, TryFutureExt};
+use futures_util::future::{FutureExt as _, TryFutureExt};
 use juniper::{
     http::{GraphQLBatchRequest, GraphQLRequest},
     ScalarValue,
